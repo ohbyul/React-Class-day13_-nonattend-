@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const Message = () => {
+const Message = ({msg , setIsShow , isShow}) => {
+
+    useEffect ( () => {
+        const timer = setTimeout( () => {
+            setIsShow(false)
+        }, 3000)
+        return () => {
+            clearTimeout(timer)
+        }
+    },[isShow])
     return (
-        <div className="message on">
-            메세지
+        <div className={`message ${isShow ? `on` : ''}` }>
+            {msg}
         </div>
     );
 };

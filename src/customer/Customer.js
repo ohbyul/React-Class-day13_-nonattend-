@@ -28,28 +28,36 @@ const Customer = () => {
     //삭제
     const onDel = ( id ) => {
         setUsers( users.filter( user => user.id !== id ))
+        setMsg('데이터를 삭제 했습니다.')
+        setIsShow(true)
     }
 
     //추가 
     const onAdd = ( form )  => {
         form.id = no.current++
         setUsers([...users, form ])
+        setMsg('데이터를 추가 했습니다.')
+        setIsShow(true)
     }
     //수정 
     const onEdit  = ( user )  => {
         setIsEdit( true )
         setCurrent( user )
+        setMsg('데이터를 수정 했습니다.')
+        setIsShow(true)
     }
 
     //갱신
     const onUpdate = ( data )  => {
         setUsers( users.map( user => user.id === data.id ? data : user ) )
         setIsEdit( false )
+        setMsg('데이터를 수정 했습니다.')
+        setIsShow(true)
     }
 
     return (
         <div className='Customer'>
-            <Message />
+            <Message msg = {msg} isShow={isShow} setIsShow = {setIsShow}/>
 
             {
                 isEdit ?  <EditUser  current={current} onUpdate={onUpdate} setIsEdit={setIsEdit}/> :
