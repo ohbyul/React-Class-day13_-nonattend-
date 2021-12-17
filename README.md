@@ -1,6 +1,6 @@
 # class Day 13 - non attend
-스타일 : styled-components
----
+- 스타일 : styled-components
+
 ### 1. bootstrap
 ```
 react-bootstrap
