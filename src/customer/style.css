@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.6;
+    font-size:15px;    
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a {
+	line-height: 1.6;
+    font-size:15px;    
+    text-decoration: none;
+    color:#333;
+}
+
+ol, ul , li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.message { position: absolute; left: 50%; top: -50px; transform: translateX(-50%); width: 100%; padding: 5px; background: yellow; box-sizing: border-box; text-align: center; transition: 0.5s; opacity: 0;}
+.message.on { opacity: 1;} 
+
+.Customer { width: 450px; border: 1px solid #000; margin:60px auto; padding: 20px; position: relative;}
+.Customer h2 { text-align: center; font-size: 35px; font-weight: 600;margin-bottom: 20px;}
+.Customer button {width: 150px; height: 40px; background: #000; color:#fff; border:none; margin-right: 15px;}
+.Customer button:last-child { margin-right: 0; }
+
+.Customer p { margin-bottom: 15px; }
+.Customer p label {display: inline-block; width: 100px;}
+.Customer p input[type=text] { width: 300px; height: 30px; padding: 0 15px; outline:none }
+
+.Customer .users { color:tomato; margin-top: 50px; }
+.Customer table {width: 100%;}
+.Customer table .w1 {width: 120px;}
+.Customer table .w2 { width: 145px;}
+.Customer table .w3 {}
+.Customer table th, .Customer table td { text-align: center;padding: 10px 0; border-bottom: 1px dotted #dcdcdc;}
+.Customer table th { border-top: 2px solid #000; background: tomato; color:#fff}
+.Customer table tr td:nth-child(1),
+.Customer table tr td:nth-child(2) { text-align: left;}
+.Customer table tr td:nth-child(1) { text-indent: 15px;}
+.Customer table tr:last-child td { border-bottom: 1px solid rgb(187, 187, 187);}
+.Customer table tr td button {width: 90px; height: 35px; background: #000; color:#fff; border:none; margin-right: 5px;}
