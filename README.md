@@ -37,6 +37,7 @@ import styled from 'styled-components'﻿
 https://styled-components.com/
 
 - styled-components css 자동완성기능 설치
+- vscode-styled-components 검색
 
 https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components
 
