@@ -36,10 +36,12 @@ import styled from 'styled-components'﻿
 참고 site
 https://styled-components.com/
 
-- styled-components css 자동완성기능 설치
+- styled-components css 자동완성기능 설치 -설치안됨
+- https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components
 - vscode-styled-components 검색
+- https://marketplace.visualstudio.com/items?itemName=diegolincoln.vscode-styled-components
 
-https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components
+
 
 📥 
 📤
